@@ -1,0 +1,15 @@
+/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /Users/yuhsuan/How-To-Use-Networkx/matrix.py
+[[  39.    2.    0. ...,    0.    0.    6.]
+ [   2.   89.    1. ...,    1.    1.    0.]
+ [   0.    1.   65. ...,    0.    0.    0.]
+ ...,
+ [   0.    1.    0. ...,  196.   76.  156.]
+ [   0.    1.    0. ...,   76.  210.  336.]
+ [   6.    0.    0. ...,  156.  336.  803.]]
+89.0
+2938
+Name:
+Type: Graph
+Number of nodes: 2938
+Number of edges: 3438092
+Average degree: 2340.4302
