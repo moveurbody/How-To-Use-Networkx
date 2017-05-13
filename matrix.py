@@ -9,7 +9,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 # 從csv中讀檔
-csv = np.genfromtxt('SNA.csv', delimiter=',')
+# csv = np.genfromtxt('SNA.csv', delimiter=',')
+csv = np.genfromtxt('crimeamatrix.csv', delimiter=',')
 # 將CSV的資料放入matrix
 matrix = np.asmatrix(csv)
 # 轉致matrix，就是one_mode
@@ -60,5 +61,7 @@ print('\nedge G')
 print(nx.edges(G))
 # 將matplotlib的座標關閉
 plt.axis('off')
+# 存檔
+plt.savefig("labels_and_colors.png")
 
 plt.show()
