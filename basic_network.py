@@ -69,16 +69,16 @@ def sample6():
     pos = nx.spring_layout(G)  # positions for all nodes
 
     # nodes
-    # nx.draw_networkx_nodes(G, pos,
-    #                        nodelist=[0, 1, 2, 3],
-    #                        node_color='r',
-    #                        node_size=500,
-    #                        alpha=0.8)
-    # nx.draw_networkx_nodes(G, pos,
-    #                        nodelist=[4, 5, 6, 7],
-    #                        node_color='b',
-    #                        node_size=500,
-    #                        alpha=0.8)
+    nx.draw_networkx_nodes(G, pos,
+                           nodelist=[0, 1, 2, 3],
+                           node_color='r',
+                           node_size=500,
+                           alpha=0.8)
+    nx.draw_networkx_nodes(G, pos,
+                           nodelist=[4, 5, 6, 7],
+                           node_color='b',
+                           node_size=500,
+                           alpha=0.8)
 
     # edges
     nx.draw_networkx_edges(G, pos, width=1.0, alpha=0.5)

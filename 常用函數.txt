@@ -1,0 +1,30 @@
+networkx 提供画图的函数有：
+
+draw（G，[pos,ax,hold]）
+draw_networkx(G，[pos,with_labels])
+draw_networkx_nodes(G,pos,[nodelist]) 绘制网络G的节点图
+draw_networkx_edges(G,pos[edgelist]) 绘制网络G的边图
+draw_networkx_edge_labels(G, pos[, ...]) 绘制网络G的边图，边有label
+
+---有layout 布局画图函数的分界线---
+draw_circular(G, **kwargs) Draw the graph G with a circular layout.
+draw_random(G, **kwargs) Draw the graph G with a random layout.
+draw_spectral(G, **kwargs) Draw the graph G with a spectral layout.
+draw_spring(G, **kwargs) Draw the graph G with a spring layout.
+draw_shell(G, **kwargs) Draw networkx graph with shell layout.
+draw_graphviz(G[, prog]) Draw networkx graph with graphviz layout.
+
+
+networkx 画图参数：
+- node_size: 指定节点的尺寸大小(默认是300，单位未知，就是上图中那么大的点)
+- node_color: 指定节点的颜色 (默认是红色，可以用字符串简单标识颜色，例如'r'为红色，'b'为绿色等，具体可查看手册)，用“数据字典”赋值的时候必须对字典取值（.values()）后再赋值
+- node_shape: 节点的形状（默认是圆形，用字符串'o'标识，具体可查看手册）
+- alpha: 透明度 (默认是1.0，不透明，0为完全透明)
+- width: 边的宽度 (默认为1.0)
+- edge_color: 边的颜色(默认为黑色)
+- style: 边的样式(默认为实现，可选： solid|dashed|dotted,dashdot)
+- with_labels: 节点是否带标签（默认为True）
+- font_size: 节点标签字体大小 (默认为12)
+- font_color: 节点标签字体颜色（默认为黑色）
+e.g. nx.draw(G,node_size = 30, with_label = False)
+绘制节点的尺寸为30，不带标签的网络图。
