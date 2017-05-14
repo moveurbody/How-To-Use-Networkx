@@ -14,6 +14,11 @@ draw_spring(G, **kwargs) Draw the graph G with a spring layout.
 draw_shell(G, **kwargs) Draw networkx graph with shell layout.
 draw_graphviz(G[, prog]) Draw networkx graph with graphviz layout.
 
+circular_layout(G[, dim, scale])	Position nodes on a circle.
+random_layout(G[, dim])	Position nodes uniformly at random in the unit square.
+shell_layout(G[, nlist, dim, scale])	Position nodes in concentric circles.
+spring_layout(G[, dim, k, pos, fixed, ...])	Position nodes using Fruchterman-Reingold force-directed algorithm.
+spectral_layout(G[, dim, weight, scale])
 
 networkx 画图参数：
 - node_size: 指定节点的尺寸大小(默认是300，单位未知，就是上图中那么大的点)
