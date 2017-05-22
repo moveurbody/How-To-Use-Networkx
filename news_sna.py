@@ -14,6 +14,8 @@ import matplotlib.pyplot as plt
 csv = np.genfromtxt('data/combinematrix.csv', delimiter=',')
 # 將CSV的資料放入matrix
 matrix = np.asmatrix(csv)
+
+print(matrix)
 # 轉致matrix，就是one_mode
 matrix_t = matrix.T
 
@@ -83,6 +85,7 @@ for label in range(0,matrix_len):
 # 將matplotlib的座標關閉
 plt.axis('off')
 # 存檔
-plt.savefig("picture_sna_room.png")
+# plt.savefig("picture_sna_room.png")
 
+# print(nx.number_of_cliques(G))
 plt.show()
